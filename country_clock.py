@@ -2,7 +2,6 @@ import pytz
 from datetime import datetime
 
 def get_country_time(country_code):
-    """Finds and displays the current date and time in a country using `pytz`."""
     try:
         # Get the first timezone associated with the country
         timezones = pytz.country_timezones.get(country_code.upper())
