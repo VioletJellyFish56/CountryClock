@@ -23,11 +23,11 @@ local_timezone = local_time.astimezone().tzinfo
 print(f"\n⏳ Your Current Date & Time ({local_timezone}): {local_time.strftime('%Y-%m-%d %H:%M:%S %p')}")
 
 # List of available country codes
-print("\n🌍 Example country codes: US (USA), GB (United Kingdom), IN (India), JP (Japan), CH (Switzerland), KR (South Korea)")
+print("\n🌍 Example country codes: US (USA), GB (United Kingdom), BR (Brazil), JP (Japan), CH (Switzerland), KR (South Korea)")
 
 # Ask the user for a country code
 while True:
-    country_code = input("\n🌍 Enter the **2-letter country code** (press Enter to stop): ").strip().upper()
+    country_code = input("\n🌍 What country would you like to visit? Enter the \**2-letter country code\** (press ENTER to stop): ").strip().upper()
     if not country_code:
         print("✅ Exiting program.")
         break
