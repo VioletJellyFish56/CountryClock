@@ -11,7 +11,7 @@ def get_country_time(country_code):
             tz = pytz.timezone(timezone)
             country_time = datetime.now(tz)
 
-            print(f"\n🕒 Current Date & Time in {country_code} ({timezone}): {country_time.strftime('%Y-%m-%d %H:%M:%S %p')}")
+            print(f"\n ✈️ Current Date & Time in {country_code} ({timezone}): {country_time.strftime('%Y-%m-%d %H:%M:%S %p')}")
         else:
             print("❌ Could not determine the time zone for this country code.")
     except Exception as e:
@@ -20,7 +20,7 @@ def get_country_time(country_code):
 # Display user's local time
 local_time = datetime.now()
 local_timezone = local_time.astimezone().tzinfo
-print(f"\n⏳ Your Current Date & Time ({local_timezone}): {local_time.strftime('%Y-%m-%d %H:%M:%S %p')}")
+print(f"\n⏳ 🕒 Your Current Date & Time ({local_timezone}): {local_time.strftime('%Y-%m-%d %H:%M:%S %p')}")
 
 # List of available country codes
 print("\n🌍 Example country codes: US (USA), GB (United Kingdom), BR (Brazil), JP (Japan), CH (Switzerland), KR (South Korea)")
