@@ -27,7 +27,7 @@ print("\n🌍 Example country codes: US (USA), GB (United Kingdom), BR (Brazil),
 
 # Ask the user for a country code
 while True:
-    country_code = input("\n🌍 What country would you like to visit? Enter the \**2-letter country code\** (press ENTER to stop): ").strip().upper()
+    country_code = input("\n🌍 What country would you like to visit? Enter the **2-letter country code** (press ENTER to stop): ").strip().upper()
     if not country_code:
         print("✅ Exiting program.")
         break
