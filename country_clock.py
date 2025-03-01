@@ -1,6 +1,7 @@
 import pytz
 from datetime import datetime
 
+# This function uses the input the user put in as the 2 digit country code and finds the time and timezone in that country
 def get_country_time(country_code):
     try:
         # Get the first timezone associated with the country
